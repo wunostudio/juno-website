@@ -174,9 +174,38 @@ nav {
 }
 
 .demo p.demo-note {
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin-top: -0.5rem;
+    margin-bottom: 1.25rem;
     font-size: 0.95rem;
+}
+
+.demo-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.demo-legend span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    flex: none;
+}
+
+.dot-green {
+    background: var(--success);
+}
+
+.dot-purple {
+    background: #af52de;
 }
 
 /* YouTube Short stays 9:16, sized to the viewport so it can be
