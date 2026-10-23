@@ -19,6 +19,7 @@
                 <a href="#demo">Demo</a>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
+                <a href="#beta">Join beta</a>
                 <a href="#support">Support</a>
                 <a href="privacy.html">Privacy</a>
             </div>
@@ -33,6 +34,7 @@
                 <p class="hero-subtitle">Point your iPhone at a shelf. Juno reads barcodes and spine text, then overlays resale price and rank on the books that match your filters.</p>
                 <p class="hero-note">iPhone app. Sign in with Apple. A subscription is required; eligible Apple IDs can start a 7-day trial.</p>
                 <p class="hero-note">Juno is currently in beta, with a full release coming soon.</p>
+                <a href="#beta" class="cta-button hero-beta">Request the beta</a>
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
@@ -125,6 +127,46 @@
             </div>
         </section>
 
+        <section id="beta" class="beta-section">
+            <h2>Request the beta</h2>
+            <p class="beta-intro">Juno is an iPhone beta. Answer the questions, then send the email this prepares. The invite goes to the Apple ID email on your iPhone.</p>
+            <form id="beta-form" class="beta-form" novalidate>
+                <label for="beta-name">Name</label>
+                <input id="beta-name" name="name" type="text" autocomplete="name" required>
+
+                <label for="beta-apple">Apple ID email</label>
+                <input id="beta-apple" name="appleId" type="email" autocomplete="email" inputmode="email" required>
+                <p class="field-hint">Use the Apple ID on your iPhone. That is where the TestFlight invite is sent.</p>
+
+                <label for="beta-sold">How many books do you sell per week?</label>
+                <select id="beta-sold" name="booksPerWeek" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>I am not selling yet</option>
+                    <option>Fewer than 10</option>
+                    <option>10 to 50</option>
+                    <option>50 to 200</option>
+                    <option>More than 200</option>
+                </select>
+
+                <label for="beta-stores">How often do you check used goods stores?</label>
+                <select id="beta-stores" name="storeVisits" required>
+                    <option value="" selected disabled>Choose one</option>
+                    <option>Rarely</option>
+                    <option>A few times a month</option>
+                    <option>About once a week</option>
+                    <option>A few times a week</option>
+                    <option>Most days</option>
+                </select>
+
+                <button type="submit" class="cta-button">Email this request</button>
+                <p class="beta-send">This opens an email to <a href="mailto:contact@wunostudio.com">contact@wunostudio.com</a> with your answers filled in. You still need to send that email. You can add anything else before you send it. This page does not save the form.</p>
+                <p class="beta-error" hidden>Fill in every field, then email the request.</p>
+            </form>
+            <noscript>
+                <p class="beta-intro">Email <a href="mailto:contact@wunostudio.com?subject=Juno%20beta%20request">contact@wunostudio.com</a> with your name, the Apple ID email on your iPhone, how many books you sell per week, and how often you check used goods stores.</p>
+            </noscript>
+        </section>
+
         <section class="cta-section">
             <h2>Subscription</h2>
             <p>$14.99 a month or $149.99 a year, billed by Apple. Eligible Apple IDs get a 7-day trial, then the plan renews until you cancel in Settings → Apple ID → Subscriptions.</p>
@@ -204,6 +246,7 @@
                 <h4>Quick links</h4>
                 <ul>
                     <li><a href="#features">Features</a></li>
+                    <li><a href="#beta">Request the beta</a></li>
                     <li><a href="#support">Support</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms.html">Terms of Use</a></li>
@@ -230,6 +273,40 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+
+        const betaForm = document.getElementById('beta-form');
+        const betaError = betaForm.querySelector('.beta-error');
+
+        function betaMailto(form) {
+            const name = form.name.value.trim();
+            const appleId = form.appleId.value.trim();
+            const books = form.booksPerWeek.value.trim();
+            const stores = form.storeVisits.value.trim();
+            const body = [
+                'I would like to join the Juno beta.',
+                '',
+                'Name: ' + name,
+                'Apple ID email: ' + appleId,
+                'Books sold per week: ' + books,
+                'How often I check used goods stores: ' + stores
+            ].join('\n');
+            return 'mailto:contact@wunostudio.com?subject='
+                + encodeURIComponent('Juno beta request')
+                + '&body='
+                + encodeURIComponent(body);
+        }
+
+        betaForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (!betaForm.checkValidity()) {
+                betaForm.classList.add('was-validated');
+                betaError.hidden = false;
+                betaForm.reportValidity();
+                return;
+            }
+            betaError.hidden = true;
+            window.location.href = betaMailto(betaForm);
         });
     </script>
 </body>
