@@ -6,8 +6,9 @@
 }
 
 :root {
-    --primary: #007AFF;
-    --primary-dark: #0056b3;
+    --primary: #3E256D;
+    --primary-dark: #2A1850;
+    --primary-light: #6B46B0;
     --success: #34C759;
     --background: #ffffff;
     --surface: #f5f5f7;
@@ -58,11 +59,30 @@ nav {
     align-items: center;
 }
 
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.brand:hover {
+    text-decoration: none;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 22%;
+    display: block;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text);
-    background: linear-gradient(135deg, var(--primary) 0%, #5856d6 100%);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -142,10 +162,11 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-/* YouTube Short: keep the 9:16 phone frame, and cap height so it
-   stays on screen instead of stretching across the page. */
+/* YouTube Short stays 9:16, sized to the viewport so it can be
+   watched on the page without opening fullscreen. */
 .demo-phone {
-    width: min(320px, 92vw, calc(78vh * 9 / 16));
+    width: min(640px, calc(100vw - 2rem));
+    width: min(640px, calc(100vw - 2rem), calc((100svh - 8rem) * 9 / 16));
     aspect-ratio: 9 / 16;
     margin: 0 auto;
     border-radius: 28px;
@@ -363,7 +384,7 @@ nav {
 .cta-section {
     padding: 6rem 2rem;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary) 0%, #5856d6 100%);
+    background: linear-gradient(160deg, var(--primary-light) 0%, var(--primary-dark) 100%);
     color: white;
 }
 
