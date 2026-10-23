@@ -476,6 +476,13 @@ nav {
     text-align: center;
     color: var(--text-secondary);
     max-width: 640px;
+    margin: 0 auto 0.75rem;
+}
+
+.beta-direct {
+    text-align: center;
+    color: var(--text);
+    max-width: 640px;
     margin: 0 auto 2rem;
 }
 
