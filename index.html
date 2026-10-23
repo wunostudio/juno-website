@@ -12,6 +12,7 @@
         <nav>
             <a href="index.html" class="logo">Juno</a>
             <div class="nav-links">
+                <a href="#demo">Demo</a>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#support">Support</a>
@@ -37,13 +38,19 @@
             </div>
         </section>
 
-        <!-- Drop demo.mp4 beside this file, then remove the hidden attribute. -->
-        <section id="demo" class="demo" hidden>
+        <section id="demo" class="demo">
             <h2>Watch a shelf scan</h2>
             <p>A short walkthrough of scanning, hits, and restore.</p>
-            <video controls playsinline preload="metadata">
-                <source src="demo.mp4" type="video/mp4">
-            </video>
+            <div class="demo-phone">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/nYtNP5jFVmw"
+                    title="Juno shelf scan demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                ></iframe>
+            </div>
         </section>
 
         <section id="features" class="features">

@@ -129,6 +129,7 @@ nav {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    scroll-margin-top: 5rem;
 }
 
 .demo h2 {
@@ -141,10 +142,23 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.demo video {
-    width: 100%;
-    border-radius: 16px;
+/* YouTube Short: keep the 9:16 phone frame, and cap height so it
+   stays on screen instead of stretching across the page. */
+.demo-phone {
+    width: min(320px, 92vw, calc(78vh * 9 / 16));
+    aspect-ratio: 9 / 16;
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
     background: #111;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.22);
+}
+
+.demo-phone iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .legal-page {
@@ -615,6 +629,7 @@ footer {
         display: none;
     }
 
+    .demo h2,
     .features h2,
     .how-it-works h2,
     .cta-section h2,
