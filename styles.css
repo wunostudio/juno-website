@@ -132,6 +132,17 @@ nav {
     background-clip: text;
 }
 
+.hero-status {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(62, 37, 109, 0.1);
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
@@ -160,6 +171,12 @@ nav {
 .demo p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+}
+
+.demo p.demo-note {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 0.95rem;
 }
 
 /* YouTube Short stays 9:16, sized to the viewport so it can be

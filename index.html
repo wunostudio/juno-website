@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juno — Find books worth buying on the shelf</title>
-    <meta name="description" content="Juno is an iPhone app that reads book barcodes and spines and shows resale prices, sales rank, and watchlist matches while the books are still on the shelf.">
+    <meta name="description" content="Juno is an iPhone app in late beta. It reads book barcodes and spines and shows resale prices, sales rank, and watchlist matches while the books are still on the shelf.">
     <link rel="icon" href="juno-logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,10 +28,12 @@
     <main>
         <section class="hero">
             <div class="hero-content">
+                <p class="hero-status">Late beta</p>
                 <h1>See which books are worth picking up</h1>
                 <p class="hero-subtitle">Point your iPhone at a shelf. Juno reads barcodes and spine text, then overlays resale price and rank on the books that match your filters.</p>
                 <a href="#how-it-works" class="cta-button">See how it works</a>
                 <p class="hero-note">iPhone app. Sign in with Apple. A subscription is required; eligible Apple IDs can start a 7-day trial.</p>
+                <p class="hero-note">Juno is in late development. Scanning, pricing, and sign-in are built. A full release is still ahead.</p>
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
@@ -44,7 +46,7 @@
 
         <section id="demo" class="demo">
             <h2>Watch a shelf scan</h2>
-            <p>A short walkthrough of scanning, hits, and restore.</p>
+            <p>A short walkthrough of signing up and scanning a shelf.</p>
             <div class="demo-phone">
                 <iframe
                     src="https://www.youtube-nocookie.com/embed/nYtNP5jFVmw"
@@ -55,6 +57,7 @@
                     loading="lazy"
                 ></iframe>
             </div>
+            <p class="demo-note">Prices in this demo are mock prices.</p>
         </section>
 
         <section id="features" class="features">
@@ -68,7 +71,17 @@
                 <div class="feature-card">
                     <div class="feature-icon">💵</div>
                     <h3>Price and rank</h3>
-                    <p>Set a minimum resale price and, if you want, a sales-rank cutoff. Hits are books that clear the filters you chose.</p>
+                    <p>Set a minimum resale price and, if you want, a sales-rank cutoff. A lower rank is a more popular book.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Yes or no</h3>
+                    <p>A barcode scan answers quickly. It is a yes when the price meets your minimum and, if you set a cutoff, the sales rank is inside it. A scan that misses either filter is a no.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>In-depth stats</h3>
+                    <p>The scan list shows a rounded price. Open a scan to see the exact price, the current used price, the low and the high, averages for 30, 90, and 180 days, and the sales rank. Those figures stay collapsed until you expand that scan.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">👁</div>
