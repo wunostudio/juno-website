@@ -3,56 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juno — Find books worth buying on the shelf</title>
-    <meta name="description" content="Juno is an iPhone app, currently in beta. It reads book barcodes and spines and shows resale prices, sales rank, and watchlist matches while the books are still on the shelf.">
-    <link rel="icon" href="juno-logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=20261023-direct">
+            <title>Juno – Book Scanner for Resellers</title>
+    <meta name="description" content="Juno is an iPhone app for book resellers, in beta. Point your camera at a shelf: Juno reads barcodes and spine text together and marks the books on your watchlist in AR.">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/draft-additions.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#3E256D">
+    <link rel="stylesheet" href="/assets/polish.css">
+    <link rel="canonical" href="https://wunostudio.com/">
+        <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Juno by Wuno Studio">
+    <meta property="og:url" content="https://wunostudio.com/">
+    <meta property="og:title" content="Juno – Book Scanner for Resellers">
+    <meta property="og:description" content="Point your iPhone at a shelf. Juno reads barcodes and spine text together and marks matching books in AR. iPhone beta.">
+    <meta property="og:image" content="https://wunostudio.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="iPhone showing Juno's glowing green and purple AR markers on books on a shelf">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juno – Book Scanner for Resellers">
+    <meta name="twitter:description" content="Point your iPhone at a shelf. Juno reads barcodes and spine text together and marks matching books. iPhone beta.">
+    <meta name="twitter:image" content="https://wunostudio.com/og-image.png">
+    <meta name="twitter:image:alt" content="iPhone showing Juno's glowing green and purple AR markers on books on a shelf">
+            <script>
+        window.JUNO_GA4_ID = 'G-XXXXXXXXXX'; // PLACEHOLDER – not a real property
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        // gtag('config', window.JUNO_GA4_ID);  // NOT LIVE – enable only after approval
+    </script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="brand">
-                <img src="juno-logo.png" alt="" width="40" height="40">
+            <a href="/" class="brand">
+                <img src="/assets/juno-logo.png" alt="" width="40" height="40">
                 <span class="logo">Juno</span>
             </a>
             <div class="nav-links">
                 <a href="#demo">Demo</a>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Subscription</a>
                 <a href="#beta">Join beta</a>
-                <a href="#support">Support</a>
-                <a href="privacy.html">Privacy</a>
+                <a href="/support">Support</a>
+                <a href="/privacy">Privacy</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <p class="hero-status">Beta</p>
-                <h1>See which books are worth picking up</h1>
-                <p class="hero-subtitle">Point your iPhone at a shelf. Juno reads barcodes and spine text, then overlays resale price and rank on the books that match your filters.</p>
-                <p class="hero-note">iPhone app. Sign in with Apple. A subscription is required; eligible Apple IDs can start a 7-day trial.</p>
-                <p class="hero-note">Juno is currently in beta, with a full release coming soon.</p>
-                <a href="#beta" class="cta-button hero-beta">Request the beta</a>
+                        <div class="hero-content">
+                <p class="hero-status">iPhone · Beta</p>
+                <h1>Point at a shelf. Spot the books you're hunting.</h1>
+                <p class="hero-subtitle">Juno reads barcodes and spine text at the same time. Small green and purple markers appear in AR on the spines it matches, and a barcode scan brings up the book's details.</p>
+                <p class="hero-note">Sign in with Apple. A subscription is required; eligible Apple IDs can start a <span data-pending="trial-length">7-day</span> free trial. Juno is in beta now, with a full release coming soon.</p>
+                <div class="hero-ctas">
+                    <a href="#beta" class="cta-button hero-beta">Request the beta</a>
+                                        <a class="appstore-badge js-appstore-badge" hidden id="appstore-badge-hero" data-placement="hero" data-pending="APP_ID,PT,launch-date" href="#appstore-link-tbd" aria-label="Download Juno on the App Store (link coming soon)">
+                        <svg class="appstore-badge-apple" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                        <span class="appstore-badge-text"><small>Download on the</small>App Store</span>
+                    </a>
+                </div>
             </div>
-            <div class="hero-image">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="scan-animation"></div>
+            <div class="hero-image" aria-hidden="true">
+                                <div class="phone-mockup">
+                    <div class="phone-screen shelf-art">
+                        <div class="shelf-row">
+                            <i style="--h:78%;--c:#7a2e2e"></i><i style="--h:88%;--c:#e8e1cf"></i><i style="--h:70%;--c:#c9822b"><b class="sphere sphere-green"></b></i><i style="--h:84%;--c:#2f3e6b"></i><i style="--h:92%;--c:#e9dfc0"></i><i style="--h:74%;--c:#9b2d2d"></i><i style="--h:86%;--c:#2b5a45"></i>
+                        </div>
+                        <div class="shelf-board"></div>
+                        <div class="shelf-row">
+                            <i style="--h:80%;--c:#3b2a4f"></i><i style="--h:90%;--c:#c4442f"></i><i style="--h:76%;--c:#d98a2b"></i><i style="--h:88%;--c:#efe8d6"><b class="sphere sphere-purple"></b></i><i style="--h:72%;--c:#5a3b2a"></i><i style="--h:84%;--c:#e3dccb"></i><i style="--h:79%;--c:#2e5b3f"><b class="sphere sphere-green"></b></i>
+                        </div>
+                        <div class="shelf-board"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="demo" class="demo">
+                <section id="demo" class="demo" data-slot="demo-video">
             <h2>Watch a shelf scan</h2>
-            <p>A short walkthrough of signing up and scanning a shelf. Every book is being scanned.</p>
-            <p class="demo-note">Prices in this demo are mock prices.</p>
+            <p>A short walkthrough of signing in and scanning a shelf.</p>
+            <p class="demo-note">Beta build, shown with sample data, not live results.</p>
             <p class="demo-legend">
-                <span><i class="dot dot-green"></i>Green dots are books worth checking the barcode of.</span>
-                <span><i class="dot dot-purple"></i>Purple dots match a keyword or author on your watchlist.</span>
-            </p>
+                <span><i class="dot dot-purple"></i>Purple: a keyword or author on your watchlist</span>
+                <span><i class="dot dot-green"></i>Green: a book that matches your scan settings</span>            </p>
             <div class="demo-phone">
                 <iframe
                     src="https://www.youtube-nocookie.com/embed/nYtNP5jFVmw"
@@ -66,38 +106,51 @@
         </section>
 
         <section id="features" class="features">
-            <h2>What you can do</h2>
+                        <h2>What Juno does</h2>
+            <p class="section-lead">Built for scanning shelves at thrift stores, library sales and estate sales.</p>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📷</div>
-                    <h3>Shelf scanning</h3>
-                    <p>Read ISBN barcodes and spine text with the camera. You do not have to pull every book down first.</p>
+                    <div class="feature-icon" aria-hidden="true">📷</div>
+                    <h3>Barcode and spine, together</h3>
+                    <p>Juno reads ISBN barcodes and spine text from the same camera view, at the same time. There's no mode to switch, and no need to pull every book off the shelf.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">💵</div>
-                    <h3>Price and rank</h3>
-                    <p>Set a minimum resale price and, if you want, a sales-rank cutoff. A lower rank is a more popular book.</p>
+                    <div class="feature-icon" aria-hidden="true"><span class="dot dot-green"></span><span class="dot dot-purple"></span></div>
+                    <h3>Markers on the shelf</h3>
+                    <p>Small green and purple markers appear in AR on the spines Juno matches. They're colour only, with no text on them, so the shelf stays easy to read.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">✅</div>
-                    <h3>Yes or no</h3>
-                    <p>A barcode scan answers quickly. It is a yes when the price meets your minimum and, if you set a cutoff, the sales rank is inside it. A scan that misses either filter is a no.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>In-depth stats</h3>
-                    <p>The scan list shows a rounded price. Open a scan to see the exact price, the current used price, the low and the high, averages for 30, 90, and 180 days, and the sales rank. Those figures stay collapsed until you expand that scan.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👁</div>
+                    <div class="feature-icon" aria-hidden="true">🔖</div>
                     <h3>Watchlist</h3>
-                    <p>Keywords and authors you save are highlighted when they show up on the shelf.</p>
+                    <p>Save keywords and authors you're looking for. When one turns up on a spine, it gets a purple marker.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔗</div>
+                    <div class="feature-icon" aria-hidden="true">📖</div>
+                    <h3>Barcode result card</h3>
+                    <p>Scan a book's barcode and a card with its title and author appears at the bottom of the screen. Markers aren't tappable, so the barcode is the way to get details.</p>
+                                    </div>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🔗</div>
                     <h3>Listing check</h3>
-                    <p>Open an eBay or Amazon search for that ISBN and compare the live listing with the estimate in the app.</p>
+                    <p>From the result card, open an Amazon or eBay search for the book's ISBN and see what's listed right now.</p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">⚙️</div>
+                    <h3>Your settings, saved</h3>
+                    <p>Sign in with Apple. Your watchlist and scan settings are saved to your Juno account.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="screens" class="screens-slot" data-slot="app-screenshots">
+            <h2>Inside the app</h2>
+            <div class="screens-row">
+                <figure class="screen"><img src="/assets/screens/01-hero-shelf-scan.png" width="600" height="1304" loading="lazy" alt="iPhone camera view of a bookshelf with glowing green markers on matched book spines"><figcaption><strong>Green marker</strong><span>Point at a shelf. See the books.</span></figcaption></figure>
+                <figure class="screen"><img src="/assets/screens/03-watchlist-match.png" width="600" height="1304" loading="lazy" alt="iPhone camera view of a bookshelf with a purple marker on a watchlist book"><figcaption><strong>Purple marker</strong><span>Spot the books you're hunting.</span></figcaption></figure>
+                <figure class="screen"><img src="/assets/screens/02-barcode-scan.png" width="600" height="1304" loading="lazy" alt="iPhone scanning a book barcode, with a card showing the title and author"><figcaption><strong>Barcode scan</strong><span>Scan a barcode. See the result card.</span></figcaption></figure>
+                <figure class="screen"><img src="/assets/screens/04-result-card.png" width="600" height="1304" loading="lazy" alt="Result card showing the book title and author, with a search button for listings"><figcaption><strong>Result card</strong><span>Scan a barcode. See the book.</span></figcaption></figure>
+                <figure class="screen"><img src="/assets/screens/05-view-listings.png" width="600" height="1304" loading="lazy" alt="In-app browser showing Amazon search results for the scanned ISBN"><figcaption><strong>View Listings</strong><span>Check Amazon and eBay listings</span></figcaption></figure>
+                <figure class="screen"><img src="/assets/screens/07-scan-list.png" width="600" height="1304" loading="lazy" alt="Scan list with titles, authors and ISBNs, each with a search button for listings"><figcaption><strong>Scan list</strong><span>Your barcode scans in one list.</span></figcaption></figure>
             </div>
         </section>
 
@@ -107,24 +160,25 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Sign in</h3>
-                    <p>Sign in with Apple. Subscribe, or start the 7-day trial when Apple offers it on your Apple ID.</p>
+                    <p>Sign in with Apple, then subscribe or start the <span data-pending="trial-length">7-day</span> trial if Apple offers it on your Apple ID.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Scan</h3>
-                    <p>Point the camera at the shelf. Barcodes and spine text are read on the phone.</p>
+                    <h3>Add your watchlist</h3>
+                    <p>In Settings, add the keywords and authors you're hunting for.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>See hits</h3>
-                    <p>Books that meet your price, rank, or watchlist show an overlay. An internet connection is required to load those results.</p>
+                    <h3>Point at a shelf</h3>
+                    <p>Move slowly along the shelf in good light. Juno reads barcodes and spine text together, and markers appear on the spines it matches.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Check the listing</h3>
-                    <p>Open the marketplace search for that book before you decide to buy it.</p>
+                    <h3>Scan for details</h3>
+                    <p>Scan a book's barcode to see its title and author, then open the Amazon or eBay search before you decide.</p>
                 </div>
             </div>
+            <p class="section-foot">Juno needs an internet connection to identify books.</p>
         </section>
 
         <section id="beta" class="beta-section">
@@ -176,56 +230,45 @@
             </noscript>
         </section>
 
-        <section class="cta-section">
+                <section id="pricing" class="cta-section" data-pending="price-monthly,price-annual,trial-length">
             <h2>Subscription</h2>
-            <p>$14.99 a month or $149.99 a year, billed by Apple. Eligible Apple IDs get a 7-day trial, then the plan renews until you cancel in Settings → Apple ID → Subscriptions.</p>
-            <a href="terms.html" class="cta-button">Subscription terms</a>
+            <p><span data-pending="price-monthly">$14.99 a month</span> or <span data-pending="price-annual">$149.99 a year</span>, billed by Apple. Eligible Apple IDs get a <span data-pending="trial-length">7-day</span> free trial, then the plan renews until you cancel in Settings → [your name] → Subscriptions.</p>
+            <a href="/terms" class="cta-button">Subscription terms</a>
         </section>
 
         <section id="support" class="support-section">
             <h2>Support</h2>
             <div class="faq-container">
                 <h3>Common questions</h3>
-
                 <div class="faq-item">
                     <h4>How do I scan?</h4>
-                    <p>Open the scanner and point the camera at the shelf. Hold steady in decent light. A barcode is the most reliable read. Spine text is used when a barcode is not in view.</p>
+                    <p>Open the scanner and point the camera at the shelf in good light, moving slowly. Juno reads barcodes and spine text at the same time. To see a book's details, scan its barcode.</p>
                 </div>
-
                 <div class="faq-item">
-                    <h4>What is a hit?</h4>
-                    <p>A hit is a book at or above the minimum resale price you set. You can also require a sales rank. Lower rank means a more popular book. Turn rank off to use price only.</p>
+                    <h4>What do the green and purple markers mean?</h4>
+                    <p>Purple marks a keyword or author from your watchlist. Green marks a book that matches your scan settings. Markers are colour only and can't be tapped; scan the barcode for details.</p>
                 </div>
-
-                <div class="faq-item">
-                    <h4>Are the prices exact?</h4>
-                    <p>No. They are market estimates. Condition, edition, and demand change what a book actually sells for. Use the eBay or Amazon link to check current listings.</p>
-                </div>
-
                 <div class="faq-item">
                     <h4>Does it work offline?</h4>
-                    <p>The camera can read a barcode or spine on the device, but identifying the book and loading a price needs an internet connection.</p>
+                    <p>No. Juno needs an internet connection to identify books.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>I subscribed, but the app still shows the paywall.</h4>
-                    <p>Stay signed in with the same Apple ID you used to subscribe, then tap Restore Purchases. Signing in alone does not attach a subscription. If you deleted your Juno account and made a new one, Restore is what attaches an Apple subscription that is still active.</p>
+                    <p>Stay signed in with the same Apple ID you used to subscribe, then tap Restore Purchases on the subscription screen. Signing in alone does not attach a subscription.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>How do I cancel?</h4>
-                    <p>Apple bills the subscription, so cancel it in Settings → Apple ID → Subscriptions. Deleting your Juno account does not stop that billing.</p>
+                    <p>Apple bills the subscription, so cancel it in Settings → [your name] → Subscriptions. Deleting your Juno account does not stop that billing.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>How do I delete my account?</h4>
-                    <p>In the app, open Settings and tap Delete Account. That removes the Juno account and the data described in the <a href="privacy.html">Privacy Policy</a>. It does not cancel the Apple subscription.</p>
+                    <p>In the app, open Settings and tap Delete Account. That removes the Juno account and the data described in the <a href="/privacy">Privacy Policy</a>. It does not cancel the Apple subscription.</p>
                 </div>
-
                 <div class="faq-item">
                     <h4>Is the camera recorded?</h4>
-                    <p>No. Frames stay on the iPhone long enough to read a barcode or spine. We do not upload photos or video. The title, author, or ISBN from that read is sent so we can look up the book.</p>
+                    <p>No. Juno reads barcodes and spine text on your iPhone and doesn't upload photos or video. Only the text it reads, such as a title or ISBN, is sent so we can identify the book.</p>
                 </div>
+                <p class="more-help"><a href="/support">More answers on the Support page →</a></p>
             </div>
 
             <div class="contact-card">
@@ -239,8 +282,8 @@
             <h2>Legal</h2>
             <p class="legal-intro">The privacy policy and terms below are the public versions linked from the app and intended for the App Store listing.</p>
             <div class="legal-tabs">
-                <a class="legal-tab" href="privacy.html">Privacy Policy</a>
-                <a class="legal-tab" href="terms.html">Terms of Use</a>
+                <a class="legal-tab" href="/privacy">Privacy Policy</a>
+                <a class="legal-tab" href="/terms">Terms of Use</a>
             </div>
         </section>
     </main>
@@ -249,16 +292,16 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Juno</h4>
-                <p>Find books worth buying while they are still on the shelf.</p>
+                <p>An iPhone shelf scanner for book resellers, by Wuno Studio.</p>
             </div>
             <div class="footer-section">
                 <h4>Quick links</h4>
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#beta">Request the beta</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="/support">Support</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -267,8 +310,16 @@
                     <li><a href="mailto:contact@wunostudio.com">contact@wunostudio.com</a></li>
                 </ul>
             </div>
+            <div class="footer-section footer-get" hidden>
+                <h4>Get Juno</h4>
+                                <a class="appstore-badge js-appstore-badge" hidden id="appstore-badge-footer" data-placement="footer" data-pending="APP_ID,PT,launch-date" href="#appstore-link-tbd" aria-label="Download Juno on the App Store (link coming soon)">
+                    <svg class="appstore-badge-apple" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                    <span class="appstore-badge-text"><small>Download on the</small>App Store</span>
+                </a>
+            </div>
         </div>
         <div class="footer-bottom">
+                        <p class="non-affiliation">Juno is not affiliated with, endorsed by, or sponsored by Amazon, eBay or Keepa.</p>
             <p>&copy; 2026 Wuno Studio. All rights reserved.</p>
         </div>
     </footer>
@@ -332,6 +383,39 @@
             betaError.hidden = true;
             refreshBetaEmail();
         });
+    </script>
+
+    <script>
+        // ===== appstore_click hook (GA4 web key event) =====
+        // Spec: Notion "Juno Measurement Plan v0.1" §3 Phase A item 3 + "UTM & ASC Campaign-Token Sheet" §3:
+        // event name: appstore_click; params: link_ct (the ct value used), placement (hero | footer | sticky).
+        // ct passthrough is ALLOWLIST ONLY – free-text URL input must never create a token.
+        (function () {
+            var APP_ID = null;
+            var PT = null;
+            function resolveCt() {
+                var q = new URLSearchParams(window.location.search);
+                var src = (q.get('utm_source') || '').toLowerCase();
+                var med = (q.get('utm_medium') || '').toLowerCase();
+                if (q.get('gclid') || (src === 'google' && med === 'cpc')) return 'gads_search_test1';
+                var map = {
+                    'instagram|social': 'ig_launch', 'tiktok|social': 'tt_launch', 'youtube|social': 'yt_launch',
+                    'x|social': 'x_launch', 'facebook|social': 'fbp_launch', 'reddit|referral': 'rd_launch',
+                    'discord|referral': 'dc_launch', 'fb_group|referral': 'fbg_launch'
+                };
+                return map[src + '|' + med] || 'web_direct';
+            }
+            var ct = resolveCt();
+            document.querySelectorAll('.js-appstore-badge').forEach(function (a) {
+                if (APP_ID && PT) {
+                    a.href = 'https://apps.apple.com/app/apple-store/id' + APP_ID + '?pt=' + encodeURIComponent(PT) + '&ct=' + encodeURIComponent(ct) + '&mt=8';
+                }
+                a.addEventListener('click', function (e) {
+                    gtag('event', 'appstore_click', { link_ct: ct, placement: a.dataset.placement });
+                    if (!APP_ID || !PT) { e.preventDefault(); }
+                });
+            });
+        })();
     </script>
 </body>
 </html>
